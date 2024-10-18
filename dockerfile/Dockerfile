@@ -28,3 +28,8 @@ RUN apt-get install -y mesa-utils libgl1-mesa-glx
 # using gnuplot for it
 
 RUN echo 'graphics_toolkit("gnuplot");' > ~/.octaverc
+
+# setup /work
+
+RUN mkdir /work
+WORKDIR /work
