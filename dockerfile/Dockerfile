@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM debian:latest
 
 RUN apt-get update
 RUN apt-get install -y gnuplot
