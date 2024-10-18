@@ -5,7 +5,7 @@ currently gnuplot, octave & maxima
 
 Build dockerfile
 
-`$ cd dockerfile && docker built -t math .`
+`$ cd dockerfile && docker build -t math .`
 
 run osx
 
@@ -17,3 +17,7 @@ run linux
 
 `$ docker run -it --rm -e DISPLAY=$DISPLAY   -v /tmp/.X11-unix:/tmp/.X11-unix math bash`
 
+## notes
+ - octave is using gnuplot for plotting
+    - not ideal, perhaps drivers matching display driver needed or additional libs needed
+   
